@@ -1,27 +1,18 @@
 set number
+set ruler
 set tags=./tags,tags;
-"set autochdir
 call plug#begin()
-Plug 'tpope/vim-sensible'
-"Plug 'dracula/vim', { 'as': 'dracula' }
-"Plug 'morhetz/gruvbox'
-"Plug 'altercation/vim-colors-solarized'
-"Plug 'neovimhaskell/haskell-vim'
-"Plug 'keith/swift.vim'
-Plug 'tmhedberg/SimpylFold'
 Plug 'rust-lang/rust.vim'
-"Plug 'kana/vim-smartinput'
-"Plug 'hzchirs/vim-material'
-"Plug 'tmux-plugins/vim-tmux'
+Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
-set ttymouse=xterm2
-set mouse=a
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
-"set foldcolumn=3
-set colorcolumn=80
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+"set mouse=a
+"set colorcolumn=80
 set path=$PWD/**
 
 syntax enable
+set termguicolors
 set bg=dark
 
 nnoremap <space> za
