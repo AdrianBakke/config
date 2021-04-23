@@ -5,14 +5,16 @@ call plug#begin()
 Plug 'rust-lang/rust.vim'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'tomlion/vim-solidity'
 call plug#end()
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
-"set mouse=a
-"set colorcolumn=80
+set ttymouse=xterm2
+set mouse=a
 set path=$PWD/**
+set hlsearch
+"set cc=80
 
 syntax enable
-set termguicolors
 set bg=dark
 
 nnoremap <space> za
