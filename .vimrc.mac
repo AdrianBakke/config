@@ -1,0 +1,5 @@
+set number
+syntax on
+set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
+filetype plugin indent on
+set ruler
